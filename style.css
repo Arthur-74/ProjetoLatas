@@ -45,21 +45,27 @@ header {
 
 
 .account_header {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding: 15px 0;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: right; */
+    /* padding: 15px 0; */
+    /* margin-right: 80px; */
+    width: auto;
+    padding: 32px 10px 12px 10px;
     margin-right: 80px;
-    width: 160px;
+}
+.dropdown {
+    white-space: nowrap;
+    /* background-color: red; */
 }
 .account_header a {
     font-family: Roboto, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     color: #fff;
-    background-color: blue;
     text-decoration: none;
     display: flex;
-    padding: 32px 20px;
+    padding: 0 0 10px 0;
+    /* padding: 32px 20px; */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -70,9 +76,11 @@ header {
 .dropdown_account {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 38px;
+    right: 90px;
+    margin-top: 20px;
     padding: 5px;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 6px;
     border: 2px solid rgb(71, 71, 71);
     box-shadow: 0px 5px 10px 2px #0000000e;
     background-color: rgb(58, 58, 58);
@@ -87,9 +95,19 @@ header {
 /* .dropdown_account:hover {
     display: block;
 } */
-.account_header a:hover {
-    background-color: rebeccapurple;
+.dropdown:hover .dropdown_account{
     display: block;
+}
+
+.dropdown_account:after {
+    position: absolute;
+    top: -10px;
+    right: 15%;
+    display: inline-block;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid  rgb(71, 71, 71);
+    border-left: 10px solid transparent;
+    content: '';
 }
 .dropdown_account ul {
     font-family: Roboto;
