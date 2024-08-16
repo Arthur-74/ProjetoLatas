@@ -238,6 +238,85 @@ section {
     margin-top: -15px;
 }
 
+/*====================================================*/
+.cards {
+    background-color: white;
+    height: 268px;
+    width: 183px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px #00000012;
+}
+.cards_link{
+    display: grid;
+    justify-content: center;
+    color: #8d8d8d;
+}
+.cards:hover{
+    background: #ffffff;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 20px 0px #00000033;
+}
+.cards_link img{
+    height: 225px;
+    width: 185px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0.9);
+    border: 1px solid #f3f3f3;
+    margin-top: -3px;
+    object-fit: cover;
+}
+.cards_link:hover img{
+    transform: scale(0.95);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    border: 1px solid #f3f3f3;
+    /*box-shadow: 0px 0px 6px #e4e4e4;*/
+}
+.cards .cards_link .tag_card {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: -25px;
+    z-index: 1;
+}
+#tagRecompensa {
+    background-color: #00ff95;
+    border-radius: 0 0 0 10px;
+    height: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tagRecompensa p {
+    font-size: 0.75em;
+    font-family: Roboto;
+    color: #000000;
+}
+.cards .cards_link .description {
+    display: grid;
+    margin-left: 10px;
+    margin-top: 0px;
+    line-height: 13px;
+    max-width: 165px;
+}
+.cards .cards_link .description .namme {
+    font-size: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cards .cards_link .description .locattion {
+    font-size: 0.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cards .cards_link .description .datte {
+    font-size: 0.6em;
+}
 
 footer {
     background-color: rgb(34, 34, 34);
