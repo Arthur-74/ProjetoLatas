@@ -266,6 +266,7 @@ section {
     border: 1px solid #f3f3f3;
     margin-top: -3px;
     object-fit: cover;
+    background-color: black;
 }
 .cards_link:hover img{
     transform: scale(0.95);
@@ -280,8 +281,8 @@ section {
     margin-bottom: -25px;
     z-index: 1;
 }
-#tagRecompensa {
-    background-color: #00ff95;
+#tagCategoria {
+    background-color: rgb(0, 189, 0);
     border-radius: 0 0 0 10px;
     height: 25px;
     width: 100px;
@@ -289,10 +290,10 @@ section {
     justify-content: center;
     align-items: center;
 }
-#tagRecompensa p {
+#tagCategoria p {
     font-size: 0.75em;
     font-family: Roboto;
-    color: #000000;
+    color: #fff;
 }
 .cards .cards_link .description {
     display: grid;
@@ -301,20 +302,25 @@ section {
     line-height: 13px;
     max-width: 165px;
 }
-.cards .cards_link .description .namme {
+.cards .cards_link .description span {
+    color: #000000 !important;
+    font-family: Roboto;
+}
+.cards .cards_link .description .name {
     font-size: 1em;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 17px;
 }
-.cards .cards_link .description .locattion {
+.cards .cards_link .description .location {
     font-size: 0.6em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.cards .cards_link .description .datte {
+.cards .cards_link .description .date {
     font-size: 0.6em;
 }
 
