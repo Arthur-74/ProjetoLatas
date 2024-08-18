@@ -133,8 +133,8 @@ nav {
     flex-wrap: wrap !important;
     list-style-type: none;
     font-family: Roboto, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    padding: 5px;
+    /* font-size: 20px; */
+    /* padding: 5px; */
 }
 .menu_categories li {
     margin: 5px 0px;
@@ -223,7 +223,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: -15px; */
+    margin-top: -15px;
 }
 .name_category p {
     font-family: Roboto;
@@ -239,6 +239,7 @@ section {
     filter: opacity(100%);
     margin: 5px;
     background-color: #000000;
+    box-shadow: 0px 0px 10px rgb(27, 27, 27);
 }
 .cards_link{
     display: flex;
@@ -252,7 +253,9 @@ section {
     width: 183px;
     position: absolute;
     z-index: 1;
-    /* filter: invert(43%) sepia(88%) saturate(1967%) hue-rotate(163deg) brightness(97%) contrast(101%); */
+    /* filter: opacity(80%); */
+    /* filter: invert(43%) sepia(88%) saturate(1967%) hue-rotate(163deg) brightness(97%) contrast(101%) opacity(80%); */
+    /* filter: invert(77%) sepia(2%) saturate(4%) hue-rotate(97deg) brightness(91%) contrast(89%); */
 }
 .cards_link .img_card{
     height: auto;
@@ -266,28 +269,32 @@ section {
     margin-top: -60px;
     overflow: hidden;
 }
+.cards:hover {
+    box-shadow: 0px 0px 15px rgb(17, 17, 17);
+}
 
 /* ------- Categoria ----------- */
 
 .cards .cards_link .tag_card {
     position: absolute;
-    margin-right: -85px;
+    margin-right: -100px;
     z-index: 2;
 }
 #tagCategoria {
-    background-color: rgb(0, 189, 0);
-    /* background-color: #75ccff; */
+    background-color: rgb(255, 217, 0);
+    /* background-color: #5a5a5a; */
     border-radius: 0 0 0 10px;
     height: 25px;
-    width: 105px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #tagCategoria p {
-    font-size: 0.75em;
+    font-size: 0.85em;
     font-family: Roboto;
-    color: #fff;
+    font-weight: 500;
+    color: #000000;
 }
 /* --------- Descrição ---------- */
 .cards .cards_link .description {
