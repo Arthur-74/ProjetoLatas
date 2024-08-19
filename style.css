@@ -369,6 +369,35 @@ section {
     display: grid;
 }
 
+/* --------------- CARDS SMARTPHONE -------------- */
+@media only screen and (max-width: 800px) {
+    .cards {
+        height: 280px;
+        width: 165px;
+    }
+    .cards_link .moldura_card{
+        height: 280px;
+        width: 165px;
+    }
+    .cards_link .img_card{
+        transform: scale(0.8);
+        margin-top: -10px;
+    }
+    .cards_link:hover .img_card{
+        transform: scale(1);
+        margin-top: -30px;
+    }
+    /* ------- Categoria ----------- */
+    .cards .cards_link .tag_card {
+        margin-right: -80px;
+    }
+    /* --------- Descrição ---------- */
+    .cards .cards_link .description {
+        max-width: 150px;
+        margin-top: 242px;
+    }
+}
+/* ----------------------------------------------- */
 
 footer {
     background-color: #313133;
