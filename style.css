@@ -4,11 +4,11 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #222222;
+    background-color: #1d1d1f;
 }
 
 header {
-    background-color: rgb(20, 20, 20);
+    background-color: #313133;
     border-bottom: 2px solid green !important;
     height: 80px;
 }
@@ -238,8 +238,8 @@ section {
     overflow: hidden;
     filter: opacity(100%);
     margin: 5px;
-    background-color: #000000;
-    box-shadow: 0px 0px 10px rgb(27, 27, 27);
+    background-color: #313133;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
 }
 .cards_link{
     display: flex;
@@ -260,17 +260,18 @@ section {
 .cards_link .img_card{
     height: auto;
     width: 120px;
-    transform: scale(0.9);
-    margin-top: 0px;
+    transform: scale(1);
+    transition: transform 1s, margin-top 1s ease;
+    margin-top: 10px;
 }
 .cards_link:hover .img_card{
     transform: scale(1.2);
     transition: transform 1s, margin-top 1s ease;
-    margin-top: -60px;
+    margin-top: -40px;
     overflow: hidden;
 }
 .cards:hover {
-    box-shadow: 0px 0px 15px rgb(17, 17, 17);
+    box-shadow: 1px 1px 5px black;
 }
 
 /* ------- Categoria ----------- */
@@ -281,8 +282,9 @@ section {
     z-index: 2;
 }
 #tagCategoria {
-    background-color: rgb(255, 217, 0);
-    /* background-color: #5a5a5a; */
+    /* background-color: rgb(255, 217, 0); */
+    box-shadow: 1px 0px 5px black;
+    background-color: #5a5a5a;
     border-radius: 0 0 0 10px;
     height: 25px;
     width: 85px;
@@ -293,35 +295,83 @@ section {
 #tagCategoria p {
     font-size: 0.85em;
     font-family: Roboto;
-    font-weight: 500;
-    color: #000000;
+    color: #ffffff;
 }
 /* --------- Descrição ---------- */
 .cards .cards_link .description {
     line-height: 13px;
     max-width: 165px;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top: 270px;
     z-index: 1;
 }
 .cards .cards_link .description span {
-    color: #000000 !important;
+    color: #f1f1f1 !important;
     font-family: Roboto;
 }
 .cards .cards_link .description .name {
     font-size: 1em;
-    font-weight: bold;
+    text-shadow: 1px 1px 4px black;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     height: 17px;
 }
 .cards .cards_link .description .date {
     font-size: 0.6em;
+    text-shadow: 1px 1px 4px black;
+    white-space: nowrap;
+}
+/* ------------- Menu interno Cards ------------- */
+.inner_menu_cards {
+    /* background-color: #272727; */
+    background-color: #252525;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    display: none;
+    border: 1px solid #33333373;
+    /* justify-content: center; */
+    justify-items: center;
+    /* align-items: center; */
+    align-content: center;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -22px;
+    padding: 0px 10px 5px 2px;
+    border-radius: 10px 0px 0px 30px;
+    height: 55px;
+    width: 25px;
+    z-index: 0;
+}
+.inner_menu_cards a {
+    /* background-color: blue; */
+    margin-bottom: 3px;
+    width: 16px;
+    height: 16px;
+}
+.inner_menu_cards .info_img {
+    width: 16px;
+    height: auto;
+    filter: invert(0.8);
+}
+.inner_menu_cards .info_img:hover {
+    filter: invert(1);
+}
+.inner_menu_cards .heart_img {
+    width: 17px;
+    height: auto;
+    filter: invert(0.8);
+}
+.inner_menu_cards .heart_img:hover {
+    filter: invert(1);
 }
 
+.margin_cards:hover .inner_menu_cards {
+    display: grid;
+}
+
+
 footer {
-    background-color: rgb(34, 34, 34);
+    background-color: #313133;
     border-top: 2px solid green !important;
     text-align: center;
     padding: 10px 0 !important;
