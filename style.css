@@ -141,13 +141,10 @@ nav {
     border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
     padding: 0px 10px 10px 10px;
 }
-
-
 .menu_categories a {
     color: #ffffff83;
     text-decoration: none;
 }
-
 .menu_categories li a:hover {
     color: #fff;
     border-bottom: 3px solid rgb(0, 199, 0);
@@ -395,6 +392,12 @@ section {
     .cards .cards_link .description {
         max-width: 150px;
         margin-top: 242px;
+    }
+    .titulo {
+        margin-left: 40px;
+    }
+    .account_header {
+        margin-right: 40px;
     }
 }
 /* ----------------------------------------------- */
